@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+    build:
+        container_name: typescriptTemplate
+        build: .
+        image: docker-registry:41239/typescriptTemplate
+        userns_mode: host
+        command: "yarn start"
+        environment:
+            - LOCAL_USER_ID=${LOCAL_USER_ID}
