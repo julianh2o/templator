@@ -30,8 +30,7 @@
     "scripts": {
         "build": "babel src --extensions '.ts' --out-dir dist",
         "start": "node dist/server.js",
-        "test": "mocha test --require @babel/register --require mocha-clean -b --recursive --trace-warnings",
-        "check-types": "tsc",
+        "test": "tsc && mocha test --require @babel/register --require mocha-clean -b --recursive --trace-warnings",
         "lint": "tslint -t verbose -c tslint.json 'src/**/*.ts'"
     },
     "dependencies": {
