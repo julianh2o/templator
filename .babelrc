@@ -1,7 +1,7 @@
 {
     "presets": [
         "@babel/typescript",
-        ["env",{"targets":{"node": "current"}}]
+        ["@babel/env",{"targets":{"node": "9.11.2"}}]
     ],
     "plugins": [
         "@babel/proposal-class-properties",
