@@ -1,0 +1,25 @@
+{
+  "name": "templator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "templator": "src/templator/templator.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julianh2o/templator.git"
+  },
+  "author": "Julian Hartline",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julianh2o/templator/issues"
+  },
+  "homepage": "https://github.com/julianh2o/templator#readme",
+  "dependencies": {
+    "fs-extra": "^7.0.1"
+  }
+}

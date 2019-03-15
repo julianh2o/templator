@@ -2,6 +2,8 @@ node_modules
 dist
 yarn-error.log
 data
+package-lock.json
+*.swp
 
 .idea/workspace.xml
 .idea/usage.statistics.xml
