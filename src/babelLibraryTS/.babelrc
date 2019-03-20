@@ -1,11 +1,19 @@
 {
 	"presets": [
+		"@babel/preset-typescript",
 		["@babel/preset-env",{
-            "targets":{"node": "10.15.1"}
+			"targets":{"node": "10.15.1"}
 		}]
 	],
 	"plugins": [
 		"@babel/proposal-class-properties",
-		"@babel/proposal-object-rest-spread"
+		"@babel/proposal-object-rest-spread",
+		["module-resolver", {
+			"root": ["./src"],
+			"alias": {
+				"test": "./test"
+			}
+		}]
 	]
 }
+

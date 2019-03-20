@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "baseUrl": "../templator/src/babelLibraryTS/src",
+        "target": "esnext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "typeRoots": [
+            "./node_modules/@types"
+        ]
+    },
+    "include": [
+        "src/**/*",
+        "../node-github/test/**/*"
+    ]
+}
