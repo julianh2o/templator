@@ -1,7 +1,5 @@
-import {VError} from "verror";
-import winston from "winston";
+import * as library from "./library";
 
-export function someFunction(a: string) {
-    winston.info(a);
-}
+export default library;
+
 

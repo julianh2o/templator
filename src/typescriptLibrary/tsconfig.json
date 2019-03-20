@@ -2,7 +2,7 @@
     "compilerOptions": {
         "outDir":"./dist",
         "baseUrl": "./src",
-        "target": "esnext",
+        "target": "es5",
         "moduleResolution": "node",
         "resolveJsonModule": true,
         "allowSyntheticDefaultImports": true,
