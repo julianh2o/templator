@@ -1,0 +1,73 @@
+0a1,4
+> // wotan-disable no-unstable-api-use
+> //NOTE: This is a modified version of @types/mocha to make wotan happy
+> //We've enhanced TestFunction to use Func | AsyncFunc instead of having separate entries
+> 
+437,445c441
+<         (fn: Func): Test;
+< 
+<         /**
+<          * Describe a specification or test-case with the given callback `fn` acting as a thunk.
+<          * The name of the function is used as the name of the test.
+<          *
+<          * - _Only available when invoked via the mocha CLI._
+<          */
+<         (fn: AsyncFunc): Test;
+---
+>         (fn: Func | AsyncFunc): Test;
+453c449
+<         (title: string, fn?: Func): Test;
+---
+>         (title: string, fn?: Func | AsyncFunc): Test;
+461c457
+<         (title: string, fn?: AsyncFunc): Test;
+---
+>         // (title: string, fn?: AsyncFunc): Test;
+493c489
+<         (fn: Func): Test;
+---
+>         (fn: Func | AsyncFunc): Test;
+502,518c498
+<         (fn: AsyncFunc): Test;
+< 
+<         /**
+<          * [bdd, tdd, qunit] Describe a specification or test-case with the given `title` and
+<          * callback `fn` acting as a thunk. Indicates this test should be executed exclusively.
+<          *
+<          * - _Only available when invoked via the mocha CLI._
+<          */
+<         (title: string, fn?: Func): Test;
+< 
+<         /**
+<          * [bdd, tdd, qunit] Describe a specification or test-case with the given `title` and
+<          * callback `fn` acting as a thunk. Indicates this test should be executed exclusively.
+<          *
+<          * - _Only available when invoked via the mocha CLI._
+<          */
+<         (title: string, fn?: AsyncFunc): Test;
+---
+>         (title: string, fn?: Func | AsyncFunc): Test;
+529c509
+<         (fn: Func): Test;
+---
+>         (fn: Func | AsyncFunc): Test;
+538,554c518
+<         (fn: AsyncFunc): Test;
+< 
+<         /**
+<          * [bdd, tdd, qunit] Describe a specification or test-case with the given `title` and
+<          * callback `fn` acting as a thunk. Indicates this test should not be executed.
+<          *
+<          * - _Only available when invoked via the mocha CLI._
+<          */
+<         (title: string, fn?: Func): Test;
+< 
+<         /**
+<          * [bdd, tdd, qunit] Describe a specification or test-case with the given `title` and
+<          * callback `fn` acting as a thunk. Indicates this test should not be executed.
+<          *
+<          * - _Only available when invoked via the mocha CLI._
+<          */
+<         (title: string, fn?: AsyncFunc): Test;
+---
+>         (title: string, fn?: Func | AsyncFunc): Test;

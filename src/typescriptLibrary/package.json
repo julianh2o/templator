@@ -1,0 +1,26 @@
+{
+    "name": "@SCOPE/LIBRARY_NAME",
+    "version": "1.0.0",
+    "description": "DESCRIPTION",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "node_modules/.bin/tsc",
+        "test": "wotan && node_modules/.bin/mocha -r ts-node/register src/**/*.spec.ts -v --trace-warnings"
+    },
+    "author": "Julian Hartline <jhartline@atypon.com>",
+    "license": "ISC",
+    "devDependencies": {
+        "@fimbul/wotan": "^0.20.0",
+        "@types/chai": "^4.1.7",
+        "@types/node": "^10.12.24",
+        "chai": "^4.2.0",
+        "mocha": "^6.0.2",
+        "ts-node": "^8.0.3"
+    },
+    "dependencies": {
+        "typescript": "^3.3.4000",
+        "verror": "^1.10.0",
+        "winston": "^3.2.1"
+    }
+}
